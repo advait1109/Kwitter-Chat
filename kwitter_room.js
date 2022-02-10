@@ -35,5 +35,10 @@ function add_room(){
 
 function redirectToRoomName(name){
       localStorage.setItem("room_name",name);
-      window.location="kwitter_page.html"
+      window.location="kwitter_page.html";
+}
+function room_logout(){
+      localStorage.removeItem("room_name");
+      localStorage.removeItem("userID");
+      window.location="index.html";
 }
